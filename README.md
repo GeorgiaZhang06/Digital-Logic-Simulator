@@ -13,6 +13,7 @@ This ECE243 project consists of a digital logic simulator implemented on the NIO
 
   [GATE TYPE] [INPUT 1 ID] [INPUT 2 ID] [OUTPUT ID] [X COORDINATE] [Y COORDINATE]
   (Note: When defining a MUX gate, the wire at index (INPUT 2 ID + 1) must be free. This is assigned to the select input of the multiplexer.)
+  
 2. Drag the .log file into the Logipile.exe compiler to generate a file that converts the file to binary (as <NAME>.bin).
 3. Move the binary files to your working directory and write the file into memory location 0x40000000 using the ‘restore’ command in your GDB terminal. (e.x. restore <NAME>.bin binary 0x40000000).
 
