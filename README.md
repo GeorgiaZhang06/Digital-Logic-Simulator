@@ -9,11 +9,12 @@ This ECE243 project consists of a digital logic simulator implemented on the NIO
 ## Project Instructions
 
 ### Circuit Description & Compilation
-The circuit must be designed and described in a <NAME>.log file using the format set out below. Each gate entry must occupy its own line. 
+1. The circuit must be designed and described in a <NAME>.log file using the format set out below. Each gate entry must occupy its own line. 
 
-[GATE TYPE] [INPUT 1 ID] [INPUT 2 ID] [OUTPUT ID] [X COORDINATE] [Y COORDINATE]
-** When defining a MUX gate, the wire at index (INPUT 2 ID + 1) must be free. This is assigned to the select input of the multiplexer.
-Drag the .log file into the Logipile.exe compiler to generate a file that converts the file to binary (as <NAME>.bin). Move the binary files to your working directory and write the file into memory location 0x40000000 using the ‘restore’ command in your GDB terminal. (e.x. restore <NAME>.bin binary 0x40000000).
+  [GATE TYPE] [INPUT 1 ID] [INPUT 2 ID] [OUTPUT ID] [X COORDINATE] [Y COORDINATE]
+  (Note: When defining a MUX gate, the wire at index (INPUT 2 ID + 1) must be free. This is assigned to the select input of the multiplexer.)
+2. Drag the .log file into the Logipile.exe compiler to generate a file that converts the file to binary (as <NAME>.bin).
+3. Move the binary files to your working directory and write the file into memory location 0x40000000 using the ‘restore’ command in your GDB terminal. (e.x. restore <NAME>.bin binary 0x40000000).
 
 ### Input & Controls		
 The PS2 keyboard is used to control which screen is being displayed, navigating between input wires and changing their values.
