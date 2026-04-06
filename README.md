@@ -29,16 +29,16 @@ The simulator itself is compiled into a RISC-V ELF binary and executed directly 
 ### Input & Controls		
 The PS2 keyboard is used to control which screen is being displayed, navigating between input wires and changing their values.
 
-UP/DOWN KEY: Navigate selection between input wires (wire is highlighted in purple and bolded when selected).
-0/1 KEY: Change value of input wire to 0/1.
-ENTER KEY: Toggle the homescreen/instruction page.
-T KEY: Show truth table when available. The truth table is not available for circuits sequential with latches.
-KEY0: Read memory location 0x40000000 and load your new circuit onto the VGA.
+1. UP/DOWN KEY: Navigate selection between input wires (wire is highlighted in purple and bolded when selected).
+2. 0/1 KEY: Change value of input wire to 0/1.
+3. ENTER KEY: Toggle the homescreen/instruction page.
+4. T KEY: Show truth table when available. The truth table is not available for circuits sequential with latches.
+5. KEY0: Read memory location 0x40000000 and load your new circuit onto the VGA.
 
 ### Output Displays
-The VGA monitor displays the instruction page on reset or by hitting ‘ENTER,’ the circuit during normal operation, or the truth table by hitting ‘T.’
-The HEX display shows “notbl” when the truth table is not available (i.e. for circuits with excessive inputs/outputs, and sequential circuits).
-The LEDs show the state of the output wires based on the index of each wire.
+1. The VGA monitor displays the instruction page on reset or by hitting ‘ENTER,’ the circuit during normal operation, or the truth table by hitting ‘T.’
+2. The HEX display shows “notbl” when the truth table is not available (i.e. for circuits with excessive inputs/outputs, and sequential circuits).
+3. The LEDs show the state of the output wires based on the index of each wire.
 
 ## Video Demonstration
 https://drive.google.com/file/d/1ESTE1uyXQqCyuRl-hJ5bMK6XDj0uhNtL/view?usp=sharing
