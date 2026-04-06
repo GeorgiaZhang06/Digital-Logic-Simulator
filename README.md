@@ -2,7 +2,11 @@
 Interactive digital logic circuit simulator for the DE1-SoC FPGA board. The system is written in bare-metal C and runs without an operating system or hardware abstraction layer. All functionality is implemented through direct interaction with memory-mapped I/O (MMIO).
 *Note: In compliance with university academic integrity policies, the source code for this project is not public.*
 
-# Hardware Interaction
+## Project Description
+
+This ECE243 project consists of a digital logic simulator implemented on the NIOS-V processor running on the DE1-SoC development board. The simulator supports both combinational and sequential logic by allowing the user to describe a circuit in a file, compile it, and load it into memory. The simulator will build the circuit, and allow the user to modify the circuit inputs by using the PS/2 keyboard. The circuit is displayed on the VGA monitor, with the wire states indicated by drawing them as red or green, and smaller combinational circuits can automatically produce a truth table.
+
+## Hardware Interaction
 All peripherals are controlled by reading from and writing to fixed physical memory addresses:
 
 1. VGA Controller: Pixel data is written directly to a memory-mapped framebuffer
@@ -11,11 +15,7 @@ All peripherals are controlled by reading from and writing to fixed physical mem
 4. Circuit Memory: Compiled circuit data is loaded into SDRAM at address 0x40000000 using GDB
 The simulator itself is compiled into a RISC-V ELF binary and executed directly on the processor.
 
-## Project Description
-
-This ECE243 project consists of a digital logic simulator implemented on the NIOS-V processor running on the DE1-SoC development board. The simulator supports both combinational and sequential logic by allowing the user to describe a circuit in a file, compile it, and load it into memory. The simulator will build the circuit, and allow the user to modify the circuit inputs by using the PS/2 keyboard. The circuit is displayed on the VGA monitor, with the wire states indicated by drawing them as red or green, and smaller combinational circuits can automatically produce a truth table.
-
-## Project Instructions
+## Project Use Instructions
 
 ### Circuit Description & Compilation
 1. The circuit must be designed and described in a <NAME>.log file using the format set out below. Each gate entry must occupy its own line. 
