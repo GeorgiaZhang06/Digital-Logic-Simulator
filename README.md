@@ -1,6 +1,15 @@
 # Digital-Logic-Simulator
-Interactive digital logic circuit simulator for the DE1-SoC FPGA board.
+Interactive digital logic circuit simulator for the DE1-SoC FPGA board. The system is written in bare-metal C and runs without an operating system or hardware abstraction layer. All functionality is implemented through direct interaction with memory-mapped I/O (MMIO).
 *Note: In compliance with university academic integrity policies, the source code for this project is not public.*
+
+# Hardware Interaction
+All peripherals are controlled by reading from and writing to fixed physical memory addresses:
+
+1. VGA Controller: Pixel data is written directly to a memory-mapped framebuffer
+2. PS/2 Keyboard: Input is handled by polling the PS/2 data register
+3. HEX Displays & LEDs: Driven by writing bitmasks to their respective MMIO registers
+4. Circuit Memory: Compiled circuit data is loaded into SDRAM at address 0x40000000 using GDB
+The simulator itself is compiled into a RISC-V ELF binary and executed directly on the processor.
 
 ## Project Description
 
