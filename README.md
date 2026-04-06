@@ -13,7 +13,7 @@ The simulator itself is compiled into a RISC-V ELF binary and executed directly 
 
 ## Project Description
 
-This ECE243 project consists of a digital logic simulator implemented on the NIOS-Vg processor running on the DE1-SoC development board. The simulator supports both combinational and sequential logic by allowing the user to describe a circuit in a file, compile it, and load it into memory. The simulator will build the circuit, and allow the user to modify the circuit inputs by using the PS/2 keyboard. The circuit is displayed on the VGA monitor, with the wire states indicated by drawing them as red or green, and smaller combinational circuits can automatically produce a truth table.
+This ECE243 project consists of a digital logic simulator implemented on the NIOS-V processor running on the DE1-SoC development board. The simulator supports both combinational and sequential logic by allowing the user to describe a circuit in a file, compile it, and load it into memory. The simulator will build the circuit, and allow the user to modify the circuit inputs by using the PS/2 keyboard. The circuit is displayed on the VGA monitor, with the wire states indicated by drawing them as red or green, and smaller combinational circuits can automatically produce a truth table.
 
 ## Project Instructions
 
